@@ -33,14 +33,14 @@ Route:: controller(AuthController::class)->group(function(){
 Route::middleware('IsLogin')->prefix('/admin')->name('admin.')->group(function(){
     Route::get('/',HomeController::class)->name('index');
     Route::controller(StudentController::class)->name('students.')->group(function(){
-        // Route::get('/students','index')->name('index');
-        // Route::get('/students/create','create')->name('create');
-        // Route::post('/students','store')->name('store');
-        // Route::get('/students/{id}/edit','edit')->name('edit');
+
+
+
+
         Route::put('/students/{id}','update')->name('update');
         Route::get('/students/archive','archive')->name('archive');
-        // Route::get('/students/{id}','show')->name('show');
-        // Route::delete('/students/{id}','destroy')->name('destroy');
+
+
         Route::delete('/students/{id}/archive','destroyArchive')->name('destroyArchive');
         Route::post('/students/{id}/restore','restore')->name('restore');
         Route::post('/students/addCourses/{id}','addCourses')->name('addCourses');
@@ -56,7 +56,5 @@ Route::middleware('IsLogin')->prefix('/admin')->name('admin.')->group(function()
 
 Route::get('/admin/students/{id}',[StudentController::class,'show'])->name('admin.students.show');
 
-// Route::get('/test1',[TestController::class,'test1'])->name('test.test1');
 
-// Route::get('/test2/{id}/{name?}',[TestController::class,'test2'])->name('test.test2')->where(['id'=>'[0-9]+','name'=>'[a-zA-Z]+']);
 

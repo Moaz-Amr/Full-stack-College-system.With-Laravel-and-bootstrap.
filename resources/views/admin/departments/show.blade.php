@@ -4,7 +4,7 @@ show
   <head>
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <!-- Tell the browser to be responsive to screen width -->
+
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta
     name="keywords"
@@ -16,14 +16,14 @@ show
   />
   <meta name="robots" content="noindex,nofollow" />
   <title>Matrix Admin Lite Free Versions Template by WrapPixel</title>
-  <!-- Favicon icon -->
+
   <link
     rel="icon"
     type="image/png"
     sizes="16x16"
     href="{{ asset('assets') }}/images/favicon.png"
   />
-  <!-- Custom CSS -->
+
   <link href="{{ asset('assets') }}/css/style.min.css" rel="stylesheet" />
     <link
       href="{{ asset('assets') }}/css/dataTables.bootstrap4.css"

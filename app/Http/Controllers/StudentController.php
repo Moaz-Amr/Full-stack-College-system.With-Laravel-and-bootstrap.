@@ -14,12 +14,12 @@ use Illuminate\Support\Facades\Storage;
 class StudentController extends Controller
 {
     public function index(){
-        // all students view
-        // $students=[
-        //     ['code'=>123,'name'=>'ali','email'=>'ali@gmail.com'  ,'department'=>'cs'],
-        //     ['code'=>125,'name'=>'sara','email'=>'sara@gmail.com','department'=>'cs'],
-        //     ['code'=>123,'name'=>'mona','email'=>'mona@gmail.com','department'=>'cs']
-        // ];
+
+
+
+
+
+
         $students=Student::get();
         return view('admin.students.index',compact('students'));
     }
@@ -27,7 +27,7 @@ class StudentController extends Controller
         $courses=Course::get();
         $student=Student::findOrFail($id);
         $tab=$student->tablet->tablet_name;
-        // return $student;
+
         return view('admin.students.show',compact('student','tab','courses'));
         
     }
@@ -42,21 +42,21 @@ class StudentController extends Controller
         }
 
     public function create(){
-        // add student view
+
         $departments=Department::get();
         return view('admin.students.create',compact('departments'));
     }
     public function store(StudentRequest $request){
         
         $student=new Student();
-        // كاءن من المودل يحمل خواص الاعبده
+
         $student->code=$request->code;
         $student->name=$request->name;
         $student->email=$request->email;
         $student->phone=$request->phone;
         $student->dept_id=$request->department;
         if($request->hasFile('photo')){
-        // $student->photo=$request->photo->getClientOriginalName();
+
         $photo=$request->file('photo');
         $photoName=$photo->getClientOriginalName();
         $path = $photo->storeAs('images', $photoName, 'public');

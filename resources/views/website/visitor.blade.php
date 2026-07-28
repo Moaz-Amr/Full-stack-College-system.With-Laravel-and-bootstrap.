@@ -20,7 +20,7 @@
         <ul>
             
             <li><a href="#about">About Us</a></li>
-            {{-- <li><a href="#programs">Programs</a></li> --}}
+
             
             <li><a href="{{route("contact")}}">Contact</a></li>
             <li><a href="{{route('ShowStudentData')}}">my student data</a></li>
