@@ -3,7 +3,7 @@
   <head>
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <!-- Tell the browser to be responsive to screen width -->
+
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta
     name="keywords"
@@ -15,14 +15,14 @@
   />
   <meta name="robots" content="noindex,nofollow" />
   <title>Matrix Admin Lite Free Versions Template by WrapPixel</title>
-  <!-- Favicon icon -->
+
   <link
     rel="icon"
     type="image/png"
     sizes="16x16"
     href="{{ asset('assets') }}/images/favicon.png"
   />
-  <!-- Custom CSS -->
+
   <link href="{{ asset('assets') }}/css/style.min.css" rel="stylesheet" />
     <link
       href="{{ asset('assets') }}/css/dataTables.bootstrap4.css"
@@ -45,21 +45,21 @@
       <header class="topbar" data-navbarbg="skin5">
       <nav class="navbar top-navbar navbar-expand-md navbar-dark">
           <div class="navbar-header" data-logobg="skin5">
-            <!-- ============================================================== -->
-            <!-- Logo -->
-            <!-- ============================================================== -->
+
+
+
             <a class="navbar-brand" href="#">
-              <!-- Logo icon -->
+
               <b class="logo-icon ps-2">
-                <!--You can put here icon as well // <i class="wi wi-sunset"></i> //-->
-                <!-- Dark Logo icon -->
+
+
                 <img src="{{ asset('assets') }}/images/logo-icon.png" alt="homepage" class="light-logo" width="25"/>
               </b>
-              <!--End Logo icon -->
-              <!-- Logo text -->
+
+
               <span class="logo-text ms-2">
-                <!-- dark Logo text -->
-                <!-- <img src="{{ asset('assets') }}/images/logo-text.png" alt="homepage" class="light-logo"/> -->
+
+
               </span>
             </a>
             <a
@@ -68,17 +68,17 @@
               ><i class="ti-menu ti-close"></i
             ></a>
           </div>
-          <!-- ============================================================== -->
-          <!-- End Logo -->
-          <!-- ============================================================== -->
+
+
+
           <div
             class="navbar-collapse collapse"
             id="navbarSupportedContent"
             data-navbarbg="skin5"
           >
-            <!-- ============================================================== -->
-            <!-- toggle and nav items -->
-            <!-- ============================================================== -->
+
+
+
             <ul class="navbar-nav float-start me-auto">
               <li class="nav-item d-none d-lg-block">
                 <a
@@ -89,9 +89,9 @@
                 ></a>
               </li>
             </ul>
-            <!-- ============================================================== -->
-            <!-- Right side toggle and nav items -->
-            <!-- ============================================================== -->
+
+
+
             <ul class="navbar-nav float-end">
               <li class="nav-item dropdown">
                 <a
@@ -132,18 +132,18 @@
 
                 </ul>
               </li>
-              <!-- ============================================================== -->
-              <!-- User profile and search -->
-              <!-- ============================================================== -->
+
+
+
             </ul>
           </div>
         </nav>
       </header>
 
       <aside class="left-sidebar" data-sidebarbg="skin5">
-        <!-- Sidebar scroll-->
+
         <div class="scroll-sidebar">
-          <!-- Sidebar navigation-->
+
           <nav class="sidebar-nav">
             <ul id="sidebarnav" class="pt-4">
               <li class="sidebar-item">
@@ -209,59 +209,59 @@
               </li>
             </ul>
           </nav>
-          <!-- End Sidebar navigation -->
+
         </div>
-        <!-- End Sidebar scroll-->
+
       </aside>
 
       <div class="page-wrapper">
-        <!-- Bread crumb -->
-        @yield('breadcrumb')
-        <!-- End Bread crumb -->
 
-        <!-- Container fluid -->
+        @yield('breadcrumb')
+
+
+
         <div class="container-fluid">
-          <!-- Start Page Content -->
+
           <div class="row">
             <div class="col-12">
                 @yield('content')
-              <!-- content -->
+
             </div>
           </div>
         </div>
-          <!-- End Page Content -->
+
 
         </div>
-        <!-- End Container fluid -->
 
-        <!-- footer -->
+
+
         <footer class="footer text-center">
           All Rights Reserved by Matrix-admin. Designed and Developed by
           <a href="https://www.wrappixel.com">WrapPixel</a>.
         </footer>
-        <!-- End footer -->
+
         
       </div>
-      <!-- End Page wrapper -->
-    </div>
-    <!-- End Wrapper -->
 
-    <!-- All Jquery -->
-    <!-- ============================================================== -->
+    </div>
+
+
+
+
     <script src="{{ asset('assets') }}/js/jquery.min.js"></script>
-<!-- Bootstrap tether Core JavaScript -->
+
 <script src="{{ asset('assets') }}/js/bootstrap.bundle.min.js"></script>
-<!-- slimscrollbar scrollbar JavaScript -->
+
 <script src="{{ asset('assets') }}/js/perfect-scrollbar.jquery.min.js"></script>
 <script src="{{ asset('assets') }}/js/sparkline.js"></script>
-<!--Wave Effects -->
+
 <script src="{{ asset('assets') }}/js/waves.js"></script>
-<!--Menu sidebar -->
+
 <script src="{{ asset('assets') }}/js/sidebarmenu.js"></script>
-<!--Custom JavaScript -->
+
 <script src="{{ asset('assets') }}/js/custom.min.js"></script>
     
-    <!-- this page js -->
+
     <script src="{{ asset('assets') }}/js/datatables.min.js"></script>
     <script>
       /****************************************

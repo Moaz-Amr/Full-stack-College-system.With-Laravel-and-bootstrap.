@@ -7,7 +7,7 @@ class TestController{
     }
     public function test2($id,$name=""){
         return $id." , ".$name;
-        // return view('test2');
+
     }
 }
 

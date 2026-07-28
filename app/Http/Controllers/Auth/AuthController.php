@@ -36,21 +36,21 @@ class AuthController extends Controller
     $user=User::create($data);
     Auth::login($user);
     return redirect()->route('admin.students.index') ;
-    // return view('admin.students.create');
+
     }
-    // public function handleLogin(Request $request){
-    //     $data=$request->validate([
+
+
         
-    //     'email'=>'email|required',
-    //     'password'=>'required'
-    //     ]);
-    //     $isLogin=Auth::attempt(['email'=>$request->email,'password']);
-    //     if(!$isLogin){
-    //         return redirect()->back();
-    //     }
-    //       return redirect()->route('admin.index') ; 
+
+
+
+
+
+
+
+
         
-    //     }
+
 
     public function handleLogin(Request $request)
 {
@@ -79,7 +79,7 @@ public function handleStudentLogin(Request $request)
     $student = Student::where('code', $credentials['code'])->first();
 
     if ($student && $student->name === $credentials['name']) {
-        // إنشاء جلسة يدويًا
+
         $request->session()->put('student_code', $student->code);
         $request->session()->regenerate();
         
